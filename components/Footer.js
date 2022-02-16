@@ -1,7 +1,26 @@
 import React from 'react'
 
 export default function Footer () {
-   
+  
+  const registerUser = async event => {
+    event.preventDefault()
+
+    const res = await fetch(
+      'https://hooks.zapier.com/hooks/catch/123456/abcde',
+      {
+        body: JSON.stringify({
+          name: event.target.name.value
+        }),
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        method: 'POST'
+      }
+    )
+
+    const result = await res.json()
+    // result.user => 'Ada Lovelace'
+  }
   return (
     <>
     {/* top footer --marketing */}
@@ -9,11 +28,11 @@ export default function Footer () {
       <div className="container px-4 mx-auto">
           <h2 className="text-2xl font-bold text-center md:text-4xl md:mb-2">Sign up for free</h2>
           <p className="mx-auto text-xl leading-snug text-center text-gray-700 lg:w-2/5 lg:mb-12">Get the course today, it is free to get started!</p>
-          <form action="#" method="post" id="suscribe-form" name="suscribe" className="mx-auto mt-4 md:w-2/3 lg:w-2/5">
+          <form onSubmit={registerUser} id="suscribe-form" name="suscribe" className="mx-auto mt-4 md:w-2/3 lg:w-2/5">
               <label className="block mb-1 text-sm font-bold cursor-pointer">Email Address</label>
   
               <div className="md:flex"> 
-                <input type="email" value="" name="email" className="block w-full p-3 placeholder-gray-700 border border-gray-500 rounded shadow-none appearance-none md:flex-1" id="footer-email"/> 
+                <input type="email" value={""}npm name="email" className="block w-full p-3 placeholder-gray-700 border border-gray-500 rounded shadow-none appearance-none md:flex-1" id="footer-email"/> 
                 <input type="submit" name="subscribe" id="suscribe-footer" value="Get the course" className="w-full px-6 py-3 mt-2 font-bold text-white bg-blue-500 rounded cursor-pointer md:mt-0 md:w-auto md:ml-2 hover:bg-blue-400 focus:bg-blue-600 js-sub-button"/>
               </div>
           </form>

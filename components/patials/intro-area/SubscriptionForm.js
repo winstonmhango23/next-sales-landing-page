@@ -34,7 +34,7 @@ export default function SubscriptionForm () {
             <p className="mt-1 leading-snug text-gray-700 md:text-xl">We will send you an email to your inbox with details of how to access the course,<span className="highlight">once you enter the email below.</span>
             </p>
 
-             <form onSubmit={registerUser}   id="subscription-form" name="subscription-form" className="mt-4" >
+             <form onSubmit={registerUser} id="subscription-form" name="subscription-form" className="mt-4" >
                     <label   className="block mb-1 text-sm font-bold cursor-pointer">Email Address
                     </label>
                  <div className="md:flex">
