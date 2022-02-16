@@ -38,7 +38,7 @@ export default function SubscriptionForm () {
                     <label   className="block mb-1 text-sm font-bold cursor-pointer">Email Address
                     </label>
                  <div className="md:flex">
-                   <input type="email" value={""} name="EMAIL"  autocomplete="email" className="block w-full p-3 placeholder-gray-700 border border-gray-500 rounded shadow-none appearance-none md:flex-1" id="email"/> 
+                   <input type="email" value={""} name="EMAIL"  autoComplete="email" className="block w-full p-3 placeholder-gray-700 border border-gray-500 rounded shadow-none appearance-none md:flex-1" id="email"/> 
                   
                    <input type="submit" name="subscribe" id="subscribe" value="Get the course" className="w-full px-6 py-3 mt-2 font-bold text-white bg-blue-500 rounded cursor-pointer md:mt-0 md:w-auto md:ml-2 hover:bg-blue-400 focus:bg-blue-600 js-sub-button"/>
                  </div>
