@@ -20,7 +20,7 @@ export default function VideoComponent (){
                	</svg>
             </div>
 
-            <video src="/videos/intro-video.wmv" className="mx-auto mt-4 bg-blue-300 rounded xl:w-2/3 md:mt-12 js-video"    poster="/images/undraw_next_js_-8-g5m.svg" autoPlay="" playsinline="" muted="" loop="">
+            <video src="/videos/intro-video.wmv" className="mx-auto mt-4 bg-blue-300 rounded xl:w-2/3 md:mt-12 js-video" poster="/images/undraw_next_js_-8-g5m.svg" autoPlay="" playsinline="" muted="" loop="">
              </video>
         </div>
     </>
