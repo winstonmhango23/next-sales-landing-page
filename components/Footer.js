@@ -13,7 +13,7 @@ export default function Footer () {
               <label className="block mb-1 text-sm font-bold cursor-pointer">Email Address</label>
   
               <div className="md:flex"> 
-                <input type="email" value="" name="email" className="block w-full p-3 placeholder-gray-700 border border-gray-500 rounded shadow-none appearance-none md:flex-1" id="footer-email" tabindex="-1" value=''/> 
+                <input type="email" value="" name="email" className="block w-full p-3 placeholder-gray-700 border border-gray-500 rounded shadow-none appearance-none md:flex-1" id="footer-email"/> 
                 <input type="submit" name="subscribe" id="suscribe-footer" value="Get the course" className="w-full px-6 py-3 mt-2 font-bold text-white bg-blue-500 rounded cursor-pointer md:mt-0 md:w-auto md:ml-2 hover:bg-blue-400 focus:bg-blue-600 js-sub-button"/>
               </div>
           </form>
