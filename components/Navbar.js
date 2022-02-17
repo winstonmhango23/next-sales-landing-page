@@ -7,7 +7,9 @@ export default function Navbar () {
   return (
     <div className="items-center justify-between py-4 md:flex">
       <Link href='/'>
-        <a><Image src={"/images/coding.png"} height= '40' width= '40' alt="logo" /></a>
+        <a>
+          <Image src={"/images/coding.png"} height= '40' width= '40' alt="logo" />
+        </a>
         
         </Link>
       <nav className="flex justify-center mt-4 md:mt-0">
